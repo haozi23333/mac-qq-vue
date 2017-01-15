@@ -1,6 +1,7 @@
 <template>
     <div class="messageBox">
-        <message-item messagesId="" userId="296409654" time="1484116446059" prefix="haozi"></message-item>
+        <userMessageItem messagesId="" userId="296409654" time="1484116446059" prefix="haozi" type="user"></userMessageItem>
+        <adminMeesageItem message="23333"></adminMeesageItem>
     </div>
 </template>
 <style>
@@ -15,15 +16,30 @@
   }
 </style>
 <script>
-    import messageItem from './messageItem.vue'
+    import userMessageItem from './userMessageItem.vue'
+    import adminMeesageItem from './adminMessageItem.vue'
     export default{
         data(){
             return{
-                msg:'hello vue'
+                msg:'hello vue',
+                lastDate: new Date().getTime()
             }
         },
+        methods : {
+            addNewMessage () {
+
+            },
+            createMessage () {
+
+            },
+            createAdminMessage (message) {
+
+            }
+
+        },
         components:{
-            messageItem
+            userMessageItem,
+            adminMeesageItem
         }
     }
 </script>

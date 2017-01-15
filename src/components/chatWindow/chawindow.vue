@@ -1,7 +1,7 @@
 <template>
     <div class="chatWindow">
         <chat-list></chat-list>
-        <dialogueWindow></dialogueWindow>
+        <dialogueWindow sessionId=""></dialogueWindow>
     </div>
 </template>
 <style scoped>
